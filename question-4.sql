@@ -6,5 +6,5 @@ AND customers.SupportRepId = employees.EmployeeId
 AND employees.Title = "Sales Support Agent"
 AND invoices.InvoiceDate LIKE "2010%"
 GROUP BY employees.FirstName, employees.LastName
-order by SUM(invoices.Total) desc
+ORDER BY SUM(invoices.Total) desc
 Limit 1;
